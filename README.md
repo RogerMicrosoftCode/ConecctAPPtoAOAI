@@ -757,10 +757,10 @@ print(response.choices[0].message.content)
 ## Notas Importantes
 
 ⚠️ **Seguridad:**
-- NUNCA subas tu archivo `.env` a Git
-- NUNCA compartas tu API Key públicamente
-- Usa Azure Key Vault en producción
-- Rota las claves periódicamente
+- USAR un sistema de Secretos para optener los parametros de Ambiente , NUNCA Subir esto a un repositorio Publico `.env` a Git
+- USAR un sistema de Secretos para optener los parametros de Ambiente , NUNCA Subir esto a un repositorio Publico  compartas tu API Key públicamente
+- RECOMENDACION DE SECGURIDAD PARA DATOS DE AMBIENTE, SERVICIO a usar Azure Key Vault en producción
+- ACTIVAR UNA POLICA DE Rota las claves o Secrets periódicamente
 
 💡 **Mejores Prácticas:**
 - Usa variables de entorno para todos los secretos
@@ -769,7 +769,7 @@ print(response.choices[0].message.content)
 - Monitorea el uso de tokens para evitar sobrecostos
 - Usa logging para debugging en desarrollo
 
-🔄 **Actualización:**
+🔄 **Actualización O Librerias ya Validades por parte de los Entornos de Desarollo de la compañia:**
 - Mantén actualizadas las librerías: `pip install --upgrade langchain-openai openai`
 - Revisa las notas de cambio de Azure OpenAI
 - Actualiza la API version cuando haya nuevas características
